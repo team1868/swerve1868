@@ -1,0 +1,21 @@
+name: Auto Assign to Project(
+
+on:
+  issues:
+    types: [opened]
+  pull_request_target:
+    types: [opened]
+  issue_comment:
+    types: [created]
+env:
+  MY_GITHUB_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}
+
+jobs:
+  add-to-project:
+    if: github.repository == 'team1868/frc2023'
+    name: Auto Assign to Project(
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/add-to-project@v0.3.0
+        with:
+          project-url: https://github.com/orgs/team1868/projects/3

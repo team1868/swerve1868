@@ -1,0 +1,10 @@
+@team1868/reviewers3 @team1868/reviewers4
+
+*.h     @team1868/reviewers3 @team1868/reviewers4
+*.cpp   @team1868/reviewers3 @team1868/reviewers4
+
+*.yaml      @team1868/reviewers4
+*.txt       @team1868/reviewers4
+build/      @team1868/reviewers4
+vendordeps/ @team1868/reviewers4
+.github/    @team1868/reviewers4
